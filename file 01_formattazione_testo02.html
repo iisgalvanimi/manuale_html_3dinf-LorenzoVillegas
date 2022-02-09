@@ -38,6 +38,63 @@
 
    <p>Come si fa una citazione in linea</p>
 
+   <p>----------</p>
+
+</xmp>
+<li>var = Di solito utilizzato per contrassegnare specificatamente nomi variabili</li>
+<xmp>
+  <p>In the above JavaScript example, <var>para</var> represents a paragraph element.</p>
+</xmp>
+<li>kbd = Viene usato principalmente per contrassegnare la tastiera e altri input all'interno del computer</li>
+<xmp>
+  <p>Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+</xmp> 
+<li>samp = Usato per contrassegnare l'output del programma del computer </li>
+<xmp>
+  <samp>PING mozilla.org (63.245.215.20): 56 data bytes
+    64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
+</xmp> 
+</ul>
+
+<h2>Script intero :</h2>
+<xmp>
+<pre><code>var para = document.querySelector('p');
+
+  para.onclick = function() {
+    alert('Owww, stop poking me!');
+  }</code></pre>
+  
+  <p>You shouldn't use presentational elements like <code>&lt;font&gt;</code> and <code>&lt;center&gt;</code>.</p>
+  
+  <p>In the above JavaScript example, <var>para</var> represents a paragraph element.</p>
+  
+  <p>Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+  
+  <pre>$ <kbd>ping mozilla.org</kbd>
+  <samp>PING mozilla.org (63.245.215.20): 56 data bytes
+  64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
+</xmp>
+
+<h2>Risultato :</h2>
+<xmp>
+var para = document.querySelector('p');
+
+para.onclick = function() {
+  alert('Owww, stop poking me!');
+}
+You shouldn't use presentational elements like <font> and <center>.
+
+In the above JavaScript example, para represents a paragraph element.
+
+Select all the text with Ctrl/Cmd + A.
+
+$ ping mozilla.org
+PING mozilla.org (63.245.215.20): 56 data bytes
+64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms
+</xmp>
+
+
+
    
 </body>
 </html>
