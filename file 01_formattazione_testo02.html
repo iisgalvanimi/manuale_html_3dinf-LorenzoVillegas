@@ -93,6 +93,45 @@ PING mozilla.org (63.245.215.20): 56 data bytes
 64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms
 </xmp>
 
+<h1>Come segnare la data e l'ora</h1>
+   <p>Per scrivere la data lavoriamo nel seguente modo</p>
+   <li>Scriviamo un commento con la data,per averla sotto mano</li>
+   <li>Ora iniziamo a scrivere:</li>
+   <ul>
+    <li>1. Scriviamo time</li>
+    <li>2. Scriviamo datetime</li>
+    <li>3. Scriviamo la data ma partendo da sinistra</li>
+    <li>4. Scriviamo la data in cui desideriamo che venga scritta</li>
+    <li>5. Scriviamo <!--</time>-->e abbiamo finito</li>
+  <ul>
+   <p>Ci sono molti modi per scrivere la data.Ecco alcuni esempi</p>
+   
+   <xmp>
+    <h
+    <ul>
+      <li>28 aprile 2022</li>
+      <li>Aprile 28 2022</li>
+      <li>28/04/2022</li>
+      <li>04/28/22</li>
+      <li>2022 aprile 28</li>
+    </ul> 
+
+    <!--28 aprile 2022-->
+    <time datetime ="2022-04-28">28 aprile 2022</time>
+
+    <!--Aprile 28 2022-->
+    <time datetime ="2022-28-04">Aprile 28 2022</time>
+
+    <!--28/04/2022-->
+    <time datetime="2022-04-28">28/04/2022</time>
+
+    <!--04/28/2022-->
+    <time datetime="2022-28-04">04/28/2022</time>
+
+    <!--2022 aprile 28-->
+    <time datetime="28-04-2022">2022 aprile 28</time>
+
+   </xmp>
 
 
    
